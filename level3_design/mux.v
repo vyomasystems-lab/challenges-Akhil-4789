@@ -1,8 +1,8 @@
-// Sub module of 8-Bit barrel shifter
+//Multiplexer commonly know as MUX  is used as sub module in 8-bit Barrel Shifter
 //A barrel shifter is a digital circuit that can shift a data word by a specified number of bits 
 //without the use of any sequential logic, only pure combinational logic
 
-/////----------------------------------------------------------------8-Bit barrel shifter--------------------------------------------------------------
+/////----------------------------------------------------------------mux--------------------------------------------------------------
 
 // Code your design here
 module mux(y,d,c);
