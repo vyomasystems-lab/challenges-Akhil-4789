@@ -96,11 +96,11 @@ async def test_seq_bug1(dut):
         #await FallingEdge(dut.clk)
         #dut.inp_bit.value=INP_bit
         #await FallingEdge(dut.clk)
-        dut.log.info("input bit is %s and seqseen bit is %s state %d"%(int(dut.inp_bit),int(dut.seq_seen),int(dut.current_state)))
+        dut.log.info("input bit is %s and seqseen bit is %s state %d"(int(dut.inp_bit),int(dut.seq_seen),int(dut.current_state)))
     if dut.next_state.value==4:
-        dut.log.info("input bit is %s and seqseen bit is %s state %d"%(int(dut.inp_bit),int(dut.seq_seen),int(dut.current_state)))
+        dut.log.info("input bit is %s and seqseen bit is %s state %d"(int(dut.inp_bit),int(dut.seq_seen),int(dut.current_state)))
     else:
-        raise TestFailure("FAIL at OVERLAPPING Condition input bit is %s and seqseen bit is %s State  %d Expected_State 4"%(int(dut.inp_bit),int(dut.seq_seen),int(dut.current_state)))
+        raise TestFailure("FAIL at OVERLAPPING Condition input bit is %s and seqseen bit is %s State  %d Expected_State 4"(int(dut.inp_bit),int(dut.seq_seen),int(dut.current_state)))
        
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----RANDOM-TEST-CASES--------------RANDOM-TEST-CASES--------------RANDOM-TEST-CASES----------RANDOM-TEST-CASES------------RANDOM-TEST-CASES----------------------------------------------------------------------------------------------------------
